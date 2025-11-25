@@ -57,6 +57,10 @@ project/
 └── package.json
 ```
 
+Snap Shot 🌟  
+<img width="1881" height="604" alt="image" src="https://github.com/user-attachments/assets/ca0da6c4-41f8-4ef6-9d0b-e40b0eb0b21c" />
+
+
 ## How to Run
 
 1. Clone the repository
