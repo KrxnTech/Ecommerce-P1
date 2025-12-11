@@ -1,1 +1,194 @@
+#HOME-PAGE-WORK {
+    padding: 10px;
+    margin: 150px auto;
+    width: 60%;
+}
 
+#BRANDING-TITLE {
+    font-size: 70px;
+}
+
+#BRANDING-TITLE-COLORED {
+    color: blue;
+}
+
+#EXPLANATION-PARAGRAPH {
+    font-weight: 400;
+    text-align: center;
+}
+
+#BUTTON-DIV {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#SHOP-NOW-BUTTON {
+    /* border: 2px solid black; */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16.5px;
+    background-color: blue;
+    color: white;
+}
+
+#BROWSE-CATEGORIES-BUTTON {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16.5px;
+    transition: 0.2s all ease;
+}
+
+#BROWSE-CATEGORIES-BUTTON:hover {
+    background-color: blue;
+    color: white;
+}
+
+#GIRL-WEARNING-HEADPHONE-IMAGE {
+    height: 45%;
+    width: 45%;
+    margin: 40px 50px 20px 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    /* filter: grayscale(100%); */
+    transition: filter 0.4s ease, transform 0.3s ease;
+}
+
+/* #GIRL-WEARNING-HEADPHONE-IMAGE:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+} */
+
+#IMAGE-SHOW-CASTE {
+    display: flex;
+}
+
+#ABOUT-US {
+    background-color: #F5F5F5;
+    height: 100%;
+    width: 40%;
+    font-size: 30px;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+}
+
+#ABOUT-US-INFORMATION {
+    position: relative;
+    top: 100px;
+    right: 600px;
+    height: 100%;
+    margin: 20px 30px 5px 10px;
+    padding: 10px;
+    font-weight: 300;
+}
+
+#MAIN-ABOUT-US-DIV {
+    background-color: #F5F5F5;
+    height: 500px;
+    width: 50%;
+    /* WHY I AM DOING THIS KIND OF BULL SHIT ? */
+    position: relative;
+    left: 730px;
+    top: -300px;
+    border-radius: 20px;
+
+}
+
+#OUR-STORY {
+    font-size: 30px;
+    padding: 20px;
+    /* background-color: yellow; */
+}
+
+#OUR-STORY-PARA {
+    padding: 25px;
+    font-weight: 100;
+}
+
+#MISSION-VISSION-MAIN-DIV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#OUR-MISSION {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+}
+
+#OUR-MISSION-IMAGE {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+#OUR-VISSION {
+    background-color: white;
+    height: 300px;
+    width: 500px;
+}
+
+#OUR-VISSION-IMAGE {
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+}
+
+#OFFER-DISCOUNT {
+    font-family: "Pacifico", cursive;
+    font-weight: 200;
+    font-size: 35px;
+    position: relative;
+    top: -480px;
+    left: 35px;
+    color: black;
+    padding: 10px;
+    width: 45%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#OFFER-DISCOUNT-SPAN {
+    color: black;
+    font-family: "Pacifico", cursive;
+    font-weight: 200;
+    margin-left: 10px;
+    font-size: 33px;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#SECTION-TWO {
+    /* background-color: red; */
+    height: 720px;
+    padding: 10px;
+}
+
+#SECTION-THREE {
+    display: flex;
+    align-items: center;
+}
+
+#OUR-MISSION-DIV {
+    background-color: #f5f5f5;
+    height: 400px;
+    width: 67.5%;
+    margin: 40px;
+    border-radius: 30px;
+}
+
+#OUR-VISSION-DIV {
+    background-color: #f5f5f5;
+    height: 400px;
+    width: 350px;
+    /* margin: 40px; */
+    border-radius: 30px;
+}
