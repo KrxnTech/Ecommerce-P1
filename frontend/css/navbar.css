@@ -1,1 +1,103 @@
+nav {
+    display: flex;
+}
 
+#LOGO-IMAGE {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#LOGO-DIV {
+    display: flex;
+    padding: 15px;
+}
+
+#WEBSTORE-NAME {
+    font-weight: 500;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+#NAVBAR-ITEMS-DIV {
+    background-color: #FFFFFF;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18.5px;
+    color: black;
+    transition: 0.2s all ease;
+}
+
+a:hover {
+    color: blue;
+}
+
+/* select {
+    margin-left: 10px;
+    background-color: #f5f5f5;
+    color: #0a0a0a;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: 0.2s ease;
+}
+
+
+select:focus {
+    border-color: #0a0a0a;
+}
+
+select option {
+    background-color: #ffffff;
+    color: #0a0a0a;
+    padding: 10px;
+    font-size: 0.95rem;
+    border: none;
+    text-align: center;
+} */
+
+#CART-PROFILE-LOGO {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    align-items: center;
+    gap: 40px;
+}
+
+#CART-LOGO {
+    transition: 0.2s all ease;
+}
+
+#CART-LOGO:hover {
+    background-color: blue;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#PROFILE-LOGO {
+    transition: 0.2s all ease;
+}
+
+#PROFILE-LOGO:hover {
+    background-color: red;
+    padding: 10px;
+    border-radius: 50%;
+}
