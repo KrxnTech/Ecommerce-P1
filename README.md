@@ -1,45 +1,158 @@
-# Day Log ✨
+# Ecommerce Website
 
-## Ecommerce Project Progress
+A full stack ecommerce application built with NodeJS Express MySQL and a modern frontend stack This project includes secure environment configuration API routing database integration and a responsive UI
 
-## Overview
+---
 
-Today was focused on improving clarity in the project environment setup and understanding how key backend components work together. A clear explanation of the env file was added along with the purpose of environment variables in a backend project. Progress was also made on server configuration and routing.
+## Features
 
-## Tasks Completed
+### Core Functionality
 
-### 1 Learned Purpose of env File
+* User registration and login
+* Secure authentication flow
+* Product listing and product detail pages
+* Shopping cart
+* Order placement system
+* Admin control for product management
 
-* Understood what environment variables are
-* Understood why env files are used in backend development
-* Understood how to load env files using dotenv
-* Understood the idea of keeping sensitive data outside the main code
-* File example was discussed with proper explanation
+### Backend
 
-### 2 Backend Server Structure Review
+* Built with NodeJS and Express
+* MySQL used for storing all data
+* MVC inspired folder structure
+* Structured API routes for clean separation
+* Error handling and validation planned for upcoming updates
 
-* Reviewed express setup
-* Reviewed how test routes are loaded
-* Learned how the server starts with the port defined inside env
-* Identified where database config is stored
+### Frontend
 
-### 3 Project Folder Maintenance
+* Responsive layout
+* Clean UI and reusable components
+* Home page completed
+* About Us page completed
+* Organized folders for HTML CSS and JS
+* Smooth interaction with backend REST APIs
 
-* Organized backend files
-* Verified test route connection
-* Ensured consistent structure for API routes
+---
 
-## Visual Reference
+## Project Folder Structure
 
-Add your image in the path below
+```
+project root
+│
+├── backend
+│   ├── config
+│   │   └── dbConfig.env
+│   ├── controllers
+│   ├── routes
+│   ├── models
+│   ├── server.js
+│   └── package.json
+│
+├── frontend
+│   ├── css
+│   ├── js
+│   ├── assets
+│   └── pages
+│
+└── readme.md
+```
 
-<img width="1882" height="742" alt="image" src="https://github.com/user-attachments/assets/5e4d8752-5397-4a23-a5f6-89738d5da4fc" />
-<img width="1890" height="809" alt="image" src="https://github.com/user-attachments/assets/86210a25-2a2e-43a7-94a9-817e3ea64cd4" />
+---
 
+## Environment Setup
 
+### Step 1 Create env File
+
+Create a file named `.env` inside the backend config folder
+Add sensitive data in it like
+
+```
+DB_HOST=your host
+DB_USER=your user
+DB_PASS=your password
+DB_NAME=your database name
+PORT=5000
+```
+
+### Step 2 Install Dependencies
+
+```
+npm install
+```
+
+### Step 3 Start the Backend Server
+
+```
+node server.js
+```
+
+The server loads environment values using dotenv and listens on the port defined inside the env file
+
+---
+
+## Database Setup
+
+### Tables Used
+
+* users
+* products
+* cart
+* orders
+
+Each table is connected using primary keys and foreign keys to maintain integrity
+
+### Connecting MySQL
+
+The backend connects to MySQL using host user password and database name provided in the env file
+
+---
+
+## API Structure
+
+### Example Route
+
+```
+GET  /api/test-db  returns database connection status
+```
+
+### Other Planned API Endpoints
+
+* User auth
+* Product management
+* Cart actions
+* Order creation
+
+---
+
+## Frontend Notes
+
+* HTML files inside pages
+* CSS folder handles global and page level styling
+* JS folder handles API calls dynamic UI and validation
+* Navbar becomes responsive for smaller screens
+
+---
+
+## Future Enhancements
+
+* JWT authentication
+* Payment gateway
+* Image uploading for products
+* Better error handling
+* Admin dashboard
+
+---
+
+## Screenshots
+
+Add your images here
+
+<img width="1882" height="742" alt="Screenshot 2025-12-11 171442" src="https://github.com/user-attachments/assets/23193848-9d94-4ca5-a07e-aeae04772573" />
+<img width="1890" height="809" alt="Screenshot 2025-12-11 171521" src="https://github.com/user-attachments/assets/0487e69a-951e-4136-afa8-3cd3fdbafc5e" />
+
+---
 
 ## Summary
 
-Today’s work improved understanding of environment variables and backend structure. The project is getting more organized and easier to extend. Next steps will include expanding routes improving error handling and preparing authentication.
+This project delivers a full working ecommerce structure with backend database support and a polished frontend Home page and About Us page are completed The workflow is scalable easy to maintain and ready for new features
 
-✨ End of day log
