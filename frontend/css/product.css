@@ -1,0 +1,177 @@
+
+/* =========================
+   Design Tokens
+========================= */
+
+:root {
+    --bg-page: #ffffff;
+    --bg-card: #ffffff;
+    --border-light: rgba(0, 0, 0, 0.08);
+
+    --text-primary: #111111;
+    --text-muted: #555555;
+
+    --btn-bg: rgba(0, 0, 0, 0.04);
+    --btn-border: rgba(0, 0, 0, 0.15);
+    --btn-hover: rgba(0, 0, 0, 0.08);
+
+    --radius: 12px;
+    --transition: 0.25s ease;
+}
+
+/* =========================
+   Base Layout
+========================= */
+
+body {
+    margin: 0;
+    padding: 60px 24px;
+    font-family: "Stack Sans Notch", system-ui, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+}
+
+/* UNIVERSAL FONT */
+*  {
+    font-family: Amarna;
+}
+
+/* =========================
+   Page Title
+========================= */
+
+.page_title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 60px;
+}
+
+/* =========================
+   Product Grid
+========================= */
+
+.product_grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+
+/* =========================
+   Product Card
+========================= */
+
+.product_card {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    padding: 16px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================
+   Product Image
+========================= */
+
+.product_card img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    transition: 0.2s all ease;
+}
+
+.product_card img:hover {
+    transform: scale(1.01);
+}
+
+
+/* =========================
+   Product Info
+========================= */
+
+.product_card h3 {
+    margin-top: 14px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.product_card p {
+    margin-top: 6px;
+    font-size: 0.95rem;
+    color: #555;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   Action Buttons
+========================= */
+
+.product_actions {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.product_actions button {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid var(--btn-border);
+    background-color: var(--btn-bg);
+    color: var(--text-primary);
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: background-color var(--transition), border var(--transition);
+}
+
+.product_actions button:hover {
+    background-color: var(--btn-hover);
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 480px) {
+    body {
+        padding: 40px 16px;
+    }
+
+    .page_title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+}
+
+
+
+/* BUTTON */
+
+button {
+    padding: 13.5px 0px;
+    width: 50%;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+
+div {
+    display: flex;
+    justify-content: center;
+}
