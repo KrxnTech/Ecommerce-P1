@@ -1,4 +1,3 @@
-
 /* =========================
    Design Tokens
 ========================= */
@@ -160,7 +159,7 @@ body {
 
 /* BUTTON */
 
-button {
+a {
     padding: 13.5px 0px;
     width: 50%;
     border: none;
@@ -168,6 +167,11 @@ button {
     border-radius: 5px;
     cursor: pointer;
     background-color: lightblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    font-weight: 900;
 }
 
 
