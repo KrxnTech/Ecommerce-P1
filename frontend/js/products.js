@@ -25,8 +25,8 @@ async function loadProducts() {
             <h3>${product.name}</h3>
             <p>${product.price}$</p>
             <div>
-            <button>Add to Cart</button>
-            <button>See Product Detail</button>
+            <a class = "add-to-cart" data-product-id= "${product.id}">Add to Cart</a>
+            <a href="" >See Product Detail</a>
             </div>
             `;
 
@@ -42,4 +42,32 @@ async function loadProducts() {
 
 loadProducts();
 
+// THIS FUNCTION WILL ADD THE PRODUCT TO THE CART  
+async function addToCart(productId) {
+    try {
+        const res = await fetch("http://localhost:5000/api/cart", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                product_id: productId,
+                quantity: 1
+            })
+        })
+
+        const data = await res.json()
+            
+    } catch (err) {
+        console.log("Add to Cart Fail ! ", err)
+    }
+}
+
+
+// ERROR SOLVING CODE AND MOST IMPORTANT PORTION 
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("add-to-cart")) {
+        addToCart(e.target.dataset.productId)
+    }
+})
 
