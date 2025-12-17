@@ -11,11 +11,24 @@ async function loadCart() {
 
             // JS HTML TO SHOW DATA IN HTML FORM 
             card.innerHTML = `
-                <img src="./assets/images/${CartItem.image}" alt="${CartItem.name}"
-                    <h3 id="cart-item-name">${CartItem.name}</h3>
-                    <p>Price: ₹${CartItem.price}</p>
-                    <p>Quantity: ${CartItem.quantity}</p>
-                "
+
+                <div id="align-set-div">
+                    <div id="cart-item-main-div">
+
+                        <div id="cart-item-image">
+                            <img src="./assets/images/${CartItem.image}" alt="${CartItem.name}">
+                        </div>
+
+                        <div id="cart-item-info">
+                            <h3 id="cart-item-name">${CartItem.name}</h3>
+                            <p>Price: ₹${CartItem.price}</p>
+                            <p>Quantity: ${CartItem.quantity}</p>
+                            <a href="#">Edit Cart</a>
+                        </div>
+
+                    </div>
+                </div>
+
             `
             container.appendChild(card)
 
